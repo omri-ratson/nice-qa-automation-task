@@ -1,4 +1,4 @@
-# IMDB_api_backend_project
+# nice-qa-automation-task - IMDB_api_backend_project
 
 This repository contains a Django-based backend project that serves as a RESTful API for an IMDb-like application. It leverages the Django Rest Framework (DRF) to provide a range of API endpoints.
 
@@ -12,28 +12,34 @@ To run this project locally, follow these steps:
 git clone {this project}
 ```
 
-## 2. Create a virtual environment to isolate the project dependencies:
+## 2. Move to the project directory:
 ```bash
-python -m venv env
-```
-## 3. Activate the virtual environment:
-```bash
-.\env\Scripts\activate
+cd .\nice-qa-automation-task
 ```
 
-## 4. Install the project dependencies:
+## 3. Create a virtual environment to isolate the project dependencies:
+```bash
+python -m venv venv
+```
+
+## 4. Activate the virtual environment:
+```bash
+.\venv\Scripts\activate
+```
+
+## 5. Install the project dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 5. Start the development server:
+## 6. Start the development server:
 ```bash
 python manage.py runserver
 ```
 The development server will be up and running at http://localhost:8000/ (you would see a page with 404 but that's fine).  
 You can now access the API endpoints.
 
-## 6. API Endpoints
+## 7. API Endpoints
 The following API endpoints are available in this project:
 
 ### Movies
@@ -52,11 +58,11 @@ The following API endpoints are available in this project:
 * `GET /watch/stream/review/{id}/`: Retrieve review of a specific movie.
 * `POST /watch/stream/{id}/review-create`: create a review for specific movie.
 
-## 7. Swagger
+## 8. Swagger
 Upon start of the application, a SwaggerUI can be accessed at - http://localhost:8000/swagger.  
 This provides a user-friendly interface to interact with the API endpoints.
 
-## 8. Tests
+## 9. Tests
 To run the integration tests for this project, use the following command:
 ```bash
 python manage.py test watchlist_app.testsIntegration
